@@ -104,10 +104,7 @@ class Gui:
         player_2_name = self.player2_combo_box.get()
         
         player1_stats,player2_stats = api_operations(player_1_name,player_2_name)
-        if not player1_stats or not player2_stats:
-            messagebox.showerror(message="One of the names is incorrect",title="Error")
-        else:
-            self.update_stats_labels(player1_stats,player2_stats)
+        self.update_stats_labels(player1_stats,player2_stats)
 
     
     def update_stats_labels(self,player1_stats,player2_stats):
