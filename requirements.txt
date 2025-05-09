@@ -1,0 +1,4 @@
+# NBA Comparison App Requirements
+
+# NBA API for fetching player statistics
+nba_api>=1.1.9
